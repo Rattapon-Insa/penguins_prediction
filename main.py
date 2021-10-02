@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 from sklearn.ensemble import RandomForestClassifier
-from tensorflow.python.util.tf_export import InvalidSymbolNameError
 
 st.write("""
 # Penguins Prediction app
