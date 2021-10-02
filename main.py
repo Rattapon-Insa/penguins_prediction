@@ -59,6 +59,7 @@ df = df[:1]
 st.subheader('User Input features')
 
 if uploaded_file is not None:
+    df = df.drop(columns= ['species'])
     st.write(df)
 else:
     st.write(' Awaiting CSV file to be upload. Currently using example input parameters.')
