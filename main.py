@@ -54,8 +54,6 @@ for col in encode:
     df = pd.concat([df,dummy], axis = 1)
     del df[col]
 
-df = df[:1]
-
 st.subheader('User Input features')
 
 if uploaded_file is not None:
@@ -63,6 +61,7 @@ if uploaded_file is not None:
     st.write(df)
 else:
     st.write(' Awaiting CSV file to be upload. Currently using example input parameters.')
+    df = df[:1]
     st.write(df)
 
 
