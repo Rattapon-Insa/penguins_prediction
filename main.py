@@ -8,17 +8,11 @@ st.write("""
 # Penguins Prediction app
 
 This app predict the **Palmer Penguin** species!
-
-Referenece Data from Data professor and palmerpenguins. 
   
 """)
 
 st.sidebar.header('User input feature')
-st.sidebar.markdown("""
 
-[Example CSV file] (https://raw.githubusercontent.com/dataprofessor/data/master/penguins_example.csv)
-
-""")
 uploaded_file = st.sidebar.file_uploader('Upload your data here',type= ['csv'])
 
 if uploaded_file is not None:
